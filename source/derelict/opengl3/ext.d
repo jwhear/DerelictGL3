@@ -246,6 +246,161 @@ enum : uint {
 
     // GL_APPLE_vertex_array_object
     GL_VERTEX_ARRAY_BINDING_APPLE        = 0x85B5,
+
+	// GL_NV_path_rendering
+	GL_PATH_FORMAT_SVG_NV                            = 0x9070,
+	GL_PATH_FORMAT_PS_NV                             = 0x9071,
+	GL_STANDARD_FONT_NAME_NV                         = 0x9072,
+	GL_SYSTEM_FONT_NAME_NV                           = 0x9073,
+	GL_FILE_NAME_NV                                  = 0x9074,
+	GL_STANDARD_FONT_FORMAT_NV                       = 0x936C,
+	GL_SKIP_MISSING_GLYPH_NV                         = 0x90A9,
+	GL_USE_MISSING_GLYPH_NV                          = 0x90AA,
+	GL_FONT_GLYPHS_AVAILABLE_NV                      = 0x9368,
+	GL_FONT_TARGET_UNAVAILABLE_NV                    = 0x9369,
+	GL_FONT_UNAVAILABLE_NV                           = 0x936A,
+	GL_FONT_UNINTELLIGIBLE_NV                        = 0x936B, // once was FONT_CORRUPT_NV
+	GL_PATH_STROKE_WIDTH_NV                          = 0x9075,
+	GL_PATH_INITIAL_END_CAP_NV                       = 0x9077,
+	GL_PATH_TERMINAL_END_CAP_NV                      = 0x9078,
+	GL_PATH_JOIN_STYLE_NV                            = 0x9079,
+	GL_PATH_MITER_LIMIT_NV                           = 0x907A,
+	GL_PATH_INITIAL_DASH_CAP_NV                      = 0x907C,
+	GL_PATH_TERMINAL_DASH_CAP_NV                     = 0x907D,
+	GL_PATH_DASH_OFFSET_NV                           = 0x907E,
+	GL_PATH_CLIENT_LENGTH_NV                         = 0x907F,
+	GL_PATH_DASH_OFFSET_RESET_NV                     = 0x90B4,
+	GL_PATH_FILL_MODE_NV                             = 0x9080,
+	GL_PATH_FILL_MASK_NV                             = 0x9081,
+	GL_PATH_FILL_COVER_MODE_NV                       = 0x9082,
+	GL_PATH_STROKE_COVER_MODE_NV                     = 0x9083,
+	GL_PATH_STROKE_MASK_NV                           = 0x9084,
+	GL_PATH_STROKE_BOUND_NV                          = 0x9086,
+	GL_PATH_END_CAPS_NV                              = 0x9076,
+	GL_PATH_DASH_CAPS_NV                             = 0x907B,
+	GL_COUNT_UP_NV                                   = 0x9088,
+	GL_COUNT_DOWN_NV                                 = 0x9089,
+	GL_PRIMARY_COLOR                                 = 0x8577, // from OpenGL 1.3
+	GL_PRIMARY_COLOR_NV                              = 0x852C, // from NV_register_combiners
+	GL_SECONDARY_COLOR_NV                            = 0x852D, // from NV_register_combiners
+	GL_PATH_OBJECT_BOUNDING_BOX_NV                   = 0x908A,
+	GL_CONVEX_HULL_NV                                = 0x908B,
+	GL_BOUNDING_BOX_NV                               = 0x908D,
+	GL_TRANSLATE_X_NV                                = 0x908E,
+	GL_TRANSLATE_Y_NV                                = 0x908F,
+	GL_TRANSLATE_2D_NV                               = 0x9090,
+	GL_TRANSLATE_3D_NV                               = 0x9091,
+	GL_AFFINE_2D_NV                                  = 0x9092,
+	GL_AFFINE_3D_NV                                  = 0x9094,
+	GL_TRANSPOSE_AFFINE_2D_NV                        = 0x9096,
+	GL_TRANSPOSE_AFFINE_3D_NV                        = 0x9098,
+	GL_UTF8_NV                                       = 0x909A,
+	GL_UTF16_NV                                      = 0x909B,
+	GL_BOUNDING_BOX_OF_BOUNDING_BOXES_NV             = 0x909C,
+	GL_PATH_COMMAND_COUNT_NV                         = 0x909D,
+	GL_PATH_COORD_COUNT_NV                           = 0x909E,
+	GL_PATH_DASH_ARRAY_COUNT_NV                      = 0x909F,
+	GL_PATH_COMPUTED_LENGTH_NV                       = 0x90A0,
+	GL_PATH_FILL_BOUNDING_BOX_NV                     = 0x90A1,
+	GL_PATH_STROKE_BOUNDING_BOX_NV                   = 0x90A2,
+	GL_SQUARE_NV                                     = 0x90A3,
+	GL_ROUND_NV                                      = 0x90A4,
+	GL_TRIANGULAR_NV                                 = 0x90A5,
+	GL_BEVEL_NV                                      = 0x90A6,
+	GL_MITER_REVERT_NV                               = 0x90A7,
+	GL_MITER_TRUNCATE_NV                             = 0x90A8,
+	GL_MOVE_TO_RESETS_NV                             = 0x90B5,
+	GL_MOVE_TO_CONTINUES_NV                          = 0x90B6,
+	GL_BOLD_BIT_NV                                   = 0x01,
+	GL_ITALIC_BIT_NV                                 = 0x02,
+	GL_PATH_ERROR_POSITION_NV                        = 0x90AB,
+	GL_PATH_FOG_GEN_MODE_NV                          = 0x90AC,
+	GL_PATH_STENCIL_FUNC_NV                          = 0x90B7,
+	GL_PATH_STENCIL_REF_NV                           = 0x90B8,
+	GL_PATH_STENCIL_VALUE_MASK_NV                    = 0x90B9,
+	GL_PATH_STENCIL_DEPTH_OFFSET_FACTOR_NV           = 0x90BD,
+	GL_PATH_STENCIL_DEPTH_OFFSET_UNITS_NV            = 0x90BE,
+	GL_PATH_COVER_DEPTH_FUNC_NV                      = 0x90BF,
+	GL_GLYPH_WIDTH_BIT_NV                            = 0x01,
+	GL_GLYPH_HEIGHT_BIT_NV                           = 0x02,
+	GL_GLYPH_HORIZONTAL_BEARING_X_BIT_NV             = 0x04,
+	GL_GLYPH_HORIZONTAL_BEARING_Y_BIT_NV             = 0x08,
+	GL_GLYPH_HORIZONTAL_BEARING_ADVANCE_BIT_NV       = 0x10,
+	GL_GLYPH_VERTICAL_BEARING_X_BIT_NV               = 0x20,
+	GL_GLYPH_VERTICAL_BEARING_Y_BIT_NV               = 0x40,
+	GL_GLYPH_VERTICAL_BEARING_ADVANCE_BIT_NV         = 0x80,
+	GL_GLYPH_HAS_KERNING_BIT_NV                      = 0x100,
+	GL_FONT_X_MIN_BOUNDS_BIT_NV                      = 0x00010000,
+	GL_FONT_Y_MIN_BOUNDS_BIT_NV                      = 0x00020000,
+	GL_FONT_X_MAX_BOUNDS_BIT_NV                      = 0x00040000,
+	GL_FONT_Y_MAX_BOUNDS_BIT_NV                      = 0x00080000,
+	GL_FONT_UNITS_PER_EM_BIT_NV                      = 0x00100000,
+	GL_FONT_ASCENDER_BIT_NV                          = 0x00200000,
+	GL_FONT_DESCENDER_BIT_NV                         = 0x00400000,
+	GL_FONT_HEIGHT_BIT_NV                            = 0x00800000,
+	GL_FONT_MAX_ADVANCE_WIDTH_BIT_NV                 = 0x01000000,
+	GL_FONT_MAX_ADVANCE_HEIGHT_BIT_NV                = 0x02000000,
+	GL_FONT_UNDERLINE_POSITION_BIT_NV                = 0x04000000,
+	GL_FONT_UNDERLINE_THICKNESS_BIT_NV               = 0x08000000,
+	GL_FONT_HAS_KERNING_BIT_NV                       = 0x10000000,
+	GL_FONT_NUM_GLYPH_INDICES_BIT_NV                 = 0x20000000,
+	GL_ACCUM_ADJACENT_PAIRS_NV                       = 0x90AD,
+	GL_ADJACENT_PAIRS_NV                             = 0x90AE,
+	GL_FIRST_TO_REST_NV                              = 0x90AF,
+	GL_PATH_GEN_MODE_NV                              = 0x90B0,
+	GL_PATH_GEN_COEFF_NV                             = 0x90B1,
+	GL_PATH_GEN_COLOR_FORMAT_NV                      = 0x90B2,
+	GL_PATH_GEN_COMPONENTS_NV                        = 0x90B3,
+	GL_FRAGMENT_INPUT_NV                             = 0x936D
+}
+
+// GL_NV_path_rendering commands
+enum : ubyte {
+	CLOSE_PATH_NV                                 = 0x00,
+	MOVE_TO_NV                                    = 0x02,
+	RELATIVE_MOVE_TO_NV                           = 0x03,
+	LINE_TO_NV                                    = 0x04,
+	RELATIVE_LINE_TO_NV                           = 0x05,
+	HORIZONTAL_LINE_TO_NV                         = 0x06,
+	RELATIVE_HORIZONTAL_LINE_TO_NV                = 0x07,
+	VERTICAL_LINE_TO_NV                           = 0x08,
+	RELATIVE_VERTICAL_LINE_TO_NV                  = 0x09,
+	QUADRATIC_CURVE_TO_NV                         = 0x0A,
+	RELATIVE_QUADRATIC_CURVE_TO_NV                = 0x0B,
+	CUBIC_CURVE_TO_NV                             = 0x0C,
+	RELATIVE_CUBIC_CURVE_TO_NV                    = 0x0D,
+	SMOOTH_QUADRATIC_CURVE_TO_NV                  = 0x0E,
+	RELATIVE_SMOOTH_QUADRATIC_CURVE_TO_NV         = 0x0F,
+	SMOOTH_CUBIC_CURVE_TO_NV                      = 0x10,
+	RELATIVE_SMOOTH_CUBIC_CURVE_TO_NV             = 0x11,
+	SMALL_CCW_ARC_TO_NV                           = 0x12,
+	RELATIVE_SMALL_CCW_ARC_TO_NV                  = 0x13,
+	SMALL_CW_ARC_TO_NV                            = 0x14,
+	RELATIVE_SMALL_CW_ARC_TO_NV                   = 0x15,
+	LARGE_CCW_ARC_TO_NV                           = 0x16,
+	RELATIVE_LARGE_CCW_ARC_TO_NV                  = 0x17,
+	LARGE_CW_ARC_TO_NV                            = 0x18,
+	RELATIVE_LARGE_CW_ARC_TO_NV                   = 0x19,
+	CONIC_CURVE_TO_NV                             = 0x1A,
+	RELATIVE_CONIC_CURVE_TO_NV                    = 0x1B,
+	ROUNDED_RECT_NV                               = 0xE8,
+	RELATIVE_ROUNDED_RECT_NV                      = 0xE9,
+	ROUNDED_RECT2_NV                              = 0xEA,
+	RELATIVE_ROUNDED_RECT2_NV                     = 0xEB,
+	ROUNDED_RECT4_NV                              = 0xEC,
+	RELATIVE_ROUNDED_RECT4_NV                     = 0xED,
+	ROUNDED_RECT8_NV                              = 0xEE,
+	RELATIVE_ROUNDED_RECT8_NV                     = 0xEF,
+	RESTART_PATH_NV                               = 0xF0,
+	DUP_FIRST_CUBIC_CURVE_TO_NV                   = 0xF2,
+	DUP_LAST_CUBIC_CURVE_TO_NV                    = 0xF4,
+	RECT_NV                                       = 0xF6,
+	RELATIVE_RECT_NV                              = 0xF7,
+	CIRCULAR_CCW_ARC_TO_NV                        = 0xF8,
+	CIRCULAR_CW_ARC_TO_NV                         = 0xFA,
+	CIRCULAR_TANGENT_ARC_TO_NV                    = 0xFC,
+	ARC_TO_NV                                     = 0xFE,
+	RELATIVE_ARC_TO_NV                            = 0xFF
 }
 
 // GL_EXT_texture_filter_anisotropic
@@ -683,6 +838,390 @@ private void load_EXT_texture_buffer_object() {
         _EXT_texture_buffer_object = true;
     } catch ( Exception e ) {
         _EXT_texture_buffer_object = false;
+    }
+}
+
+// GL_NV_path_rendering
+// More info: https://developer.nvidia.com/nv-path-rendering
+// Specification: https://www.opengl.org/registry/specs/NV/path_rendering.txt
+extern( System ) @nogc nothrow {
+	alias da_glPathCommandsNV = void function(uint path,
+						GLsizei numCommands, const ubyte *commands,
+						GLsizei numCoords, int coordType,
+						const void *coords);
+	alias da_glPathCoordsNV = void function(uint path,
+					  GLsizei numCoords, int coordType,
+					  const void *coords);
+
+	alias da_glPathSubCommandsNV = void function(uint path,
+						   GLsizei commandStart, GLsizei commandsToDelete,
+						   GLsizei numCommands, const ubyte *commands,
+						   GLsizei numCoords, int coordType,
+						   const void *coords);
+	alias da_glPathSubCoordsNV = void function(uint path,
+						 GLsizei coordStart,
+						 GLsizei numCoords, int coordType,
+						 const void *coords);
+
+	//STRING PATH DESCRIPTION
+	alias da_glPathStringNV = void function(uint path, int format,
+					  GLsizei length, const void *pathString);
+
+	//PATHS FROM FONT GLYPHS BY UNICODE CHARACTER POINT
+	alias da_glPathGlyphsNV = void function(uint firstPathName,
+					  int fontTarget,
+					  const void *fontName,
+					  int fontStyle,
+					  GLsizei numGlyphs, int type,
+					  const void *charcodes,
+					  int handleMissingGlyphs,
+					  uint pathParameterTemplate,
+					  float emScale);
+	alias da_glPathGlyphRangeNV = void function(uint firstPathName,
+						  int fontTarget,
+						  const void *fontName,
+						  int fontStyle,
+						  uint firstGlyph,
+						  GLsizei numGlyphs,
+						  int handleMissingGlyphs,
+						  uint pathParameterTemplate,
+						  float emScale);
+
+	//PATHS FROM FONT GLYPHS BY PER-FONT GLYPH INDEX
+	alias da_glPathGlyphIndexArrayNV = int function(uint firstPathName,
+							   int fontTarget,
+							   const void *fontName,
+							   int fontStyle,
+							   uint firstGlyphIndex,
+							   GLsizei numGlyphs,
+							   uint pathParameterTemplate,
+							   float emScale);
+	alias da_glPathMemoryGlyphIndexArrayNV = int function(uint firstPathName,
+									 int fontTarget,
+									 GLsizeiptr fontSize,
+									 const void *fontData,
+									 GLsizei faceIndex,
+									 uint firstGlyphIndex,
+									 GLsizei numGlyphs,
+									 uint pathParameterTemplate,
+									 float emScale);
+	alias da_glPathGlyphIndexRangeNV = int function(int fontTarget,
+							   const void *fontName,
+							   int fontStyle,
+							   uint pathParameterTemplate,
+							   float emScale,
+							   uint[2] baseAndCount);
+
+	//PATH SPECIFICATION WITH EXISTING PATHS
+	alias da_glWeightPathsNV = void function(uint resultPath,
+					   GLsizei numPaths,
+					   const uint* paths, const float* weights);
+	alias da_glCopyPathNV = void function(uint resultPath, uint srcPath);
+	alias da_glInterpolatePathsNV = void function(uint resultPath,
+							uint pathA, uint pathB,
+							float weight);
+	alias da_glTransformPathNV = void function(uint resultPath,
+						 uint srcPath,
+						 int transformType,
+						 const float *transformValues);
+
+	//PATH PARAMETER SPECIFICATION COMMANDS
+	alias da_glPathParameterivNV = void function(uint path, int pname, const int *value);
+	alias da_glPathParameteriNV = void function(uint path, int pname, int value);
+	alias da_glPathParameterfvNV = void function(uint path, int pname, const float *value);
+	alias da_glPathParameterfNV = void function(uint path, int pname, float value);
+	alias da_glPathDashArrayNV = void function(uint path, GLsizei dashCount, const float *dashArray);
+
+	//PATH NAME MANAGEMENT
+	alias da_glGenPathsNV = uint function(GLsizei range);
+	alias da_glDeletePathsNV = void function(uint path, GLsizei range);
+	alias da_glIsPathNV = bool function(uint path);
+
+	//PATH STENCILING
+	alias da_glPathStencilFuncNV = void function(int func, int ref_, uint mask);
+	alias da_glPathStencilDepthOffsetNV = void function(float factor, float units);
+
+	alias da_glStencilFillPathNV = void function(uint path,
+						   int fillMode, uint mask);
+
+	alias da_glStencilStrokePathNV = void function(uint path,
+							 int reference, uint mask);
+
+	alias da_glStencilFillPathInstancedNV = void function(GLsizei numPaths,
+									int pathNameType, const void *paths,
+									uint pathBase,
+									int fillMode, uint mask,
+									int transformType,
+									const float *transformValues);
+
+	alias da_glStencilStrokePathInstancedNV = void function(GLsizei numPaths,
+									  int pathNameType, const void *paths,
+									  uint pathBase,
+									  int reference, uint mask,
+									  int transformType,
+									  const float *transformValues);
+
+	//PATH COVERING
+	alias da_glPathCoverDepthFuncNV = void function(int zfunc);
+
+	alias da_glPathColorGenNV = void function(int color,
+						int genMode,
+						int colorFormat, const float *coeffs);
+	alias da_glPathTexGenNV = void function(int texCoordSet,
+					  int genMode,
+					  int components, const float *coeffs);
+	alias da_glPathFogGenNV = void function(int genMode);
+
+	alias da_glCoverFillPathNV = void function(uint path, int coverMode);
+
+	alias da_glCoverStrokePathNV = void function(uint path, int coverMode);
+
+	alias da_glCoverFillPathInstancedNV = void function(GLsizei numPaths,
+								  int pathNameType, const void *paths,
+								  uint pathBase,
+								  int coverMode,
+								  int transformType,
+								  const float *transformValues);
+
+	alias da_glCoverStrokePathInstancedNV = void function(GLsizei numPaths,
+									int pathNameType, const void *paths,
+									uint pathBase,
+									int coverMode,
+									int transformType,
+									const float *transformValues);
+
+	//PATH STENCILING THEN COVERING
+	alias da_glStencilThenCoverFillPathNV = void function(uint path, int fillMode,
+									uint mask, int coverMode);
+	alias da_glStencilThenCoverStrokePathNV = void function(uint path, int reference,
+									  uint mask, int coverMode);
+	alias da_glStencilThenCoverFillPathInstancedNV = void function(GLsizei numPaths,
+											 int pathNameType,
+											 const void *paths,
+											 uint pathBase,
+											 int fillMode, uint mask,
+											 int coverMode,
+											 int transformType,
+											 const float *transformValues);
+	alias da_glStencilThenCoverStrokePathInstancedNV = void function(GLsizei numPaths,
+											   int pathNameType,
+											   const void *paths,
+											   uint pathBase,
+											   int reference, uint mask,
+											   int coverMode,
+											   int transformType,
+											   const float *transformValues);
+
+	//PATH COVERING OF GLSL FRAGMENT INPUTS
+	alias da_glProgramPathFragmentInputGenNV = void function(uint program,
+									   int location,
+									   int genMode,
+									   int components,
+									   const float *coeffs);
+
+	//PATH QUERIES
+	alias da_glGetPathParameterivNV = void function(uint path, int pname, int *value);
+	alias da_glGetPathParameterfvNV = void function(uint path, int pname, float *value);
+
+	alias da_glGetPathCommandsNV = void function(uint path, ubyte *commands);
+	alias da_glGetPathCoordsNV = void function(uint path, float *coords);
+	alias da_glGetPathDashArrayNV = void function(uint path, float *dashArray);
+
+	alias da_glGetPathMetricsNV = void function(int metricQueryMask,
+						  GLsizei numPaths,
+						  int pathNameType, const void *paths,
+						  uint pathBase,
+						  GLsizei stride,
+						  float *metrics);
+	alias da_glGetPathMetricRangeNV = void function(int metricQueryMask,
+							  uint firstPathName,
+							  GLsizei numPaths,
+							  GLsizei stride,
+							  float *metrics);
+
+	alias da_glGetPathSpacingNV = void function(int pathListMode,
+						  GLsizei numPaths,
+						  int pathNameType, const void *paths,
+						  uint pathBase,
+						  float advanceScale,
+						  float kerningScale,
+						  int transformType,
+						  float *returnedSpacing);
+
+	alias da_glGetPathColorGenivNV = void function(int color, int pname, int *value);
+	alias da_glGetPathColorGenfvNV = void function(int color, int pname, float *value);
+	alias da_glGetPathTexGenivNV = void function(int texCoordSet, int pname, int *value);
+	alias da_glGetPathTexGenfvNV = void function(int texCoordSet, int pname, float *value);
+
+	alias da_glIsPointInFillPathNV = bool function(uint path,
+								uint mask, float x, float y);
+	alias da_glIsPointInStrokePathNV = bool function(uint path,
+								  float x, float y);
+
+	alias da_glGetPathLengthNV = float function(uint path,
+						  GLsizei startSegment, GLsizei numSegments);
+
+	alias da_glPointAlongPathNV = bool function(uint path,
+							 GLsizei startSegment, GLsizei numSegments,
+							 float distance,
+							 float *x, float *y,
+							 float *tangentX, float *tangentY);
+
+	//MATRIX SPECIFICATION
+	alias da_glMatrixLoad3x2fNV = void function(int matrixMode, const float *m);
+	alias da_glMatrixLoad3x3fNV = void function(int matrixMode, const float *m);
+	alias da_glMatrixLoadTranspose3x3fNV = void function(int matrixMode, const float *m);
+
+	alias da_glMatrixMult3x2fNV = void function(int matrixMode, const float *m);
+	alias da_glMatrixMult3x3fNV = void function(int matrixMode, const float *m);
+	alias da_glMatrixMultTranspose3x3fNV = void function(int matrixMode, const float *m);
+
+	//FLOATING-POINT PROGRAM RESOURCE QUERY
+	alias da_glGetProgramResourcefvNV = void function(uint program, int programInterface,
+								uint index, GLsizei propCount,
+								const int *props, GLsizei bufSize,
+								GLsizei *length, float *params);
+}
+
+__gshared {
+	da_glPathCommandsNV glPathCommandsNV;
+	da_glPathCoordsNV glPathCoordsNV;
+	da_glPathSubCommandsNV glPathSubCommandsNV;
+	da_glPathSubCoordsNV glPathSubCoordsNV;
+	da_glPathStringNV glPathStringNV;
+	da_glPathGlyphsNV glPathGlyphsNV;
+	da_glPathGlyphRangeNV glPathGlyphRangeNV;
+	da_glPathGlyphIndexArrayNV glPathGlyphIndexArrayNV;
+	da_glPathMemoryGlyphIndexArrayNV glPathMemoryGlyphIndexArrayNV;
+	da_glPathGlyphIndexRangeNV glPathGlyphIndexRangeNV;
+	da_glWeightPathsNV glWeightPathsNV;
+	da_glCopyPathNV glCopyPathNV;
+	da_glInterpolatePathsNV glInterpolatePathsNV;
+	da_glTransformPathNV glTransformPathNV;
+	da_glPathParameterivNV glPathParameterivNV;
+	da_glPathParameteriNV glPathParameteriNV;
+	da_glPathParameterfvNV glPathParameterfvNV;
+	da_glPathParameterfNV glPathParameterfNV;
+	da_glPathDashArrayNV glPathDashArrayNV;
+	da_glGenPathsNV glGenPathsNV;
+	da_glDeletePathsNV glDeletePathsNV;
+	da_glIsPathNV glIsPathNV;
+	da_glPathStencilFuncNV glPathStencilFuncNV;
+	da_glPathStencilDepthOffsetNV glPathStencilDepthOffsetNV;
+	da_glStencilFillPathNV glStencilFillPathNV;
+	da_glStencilStrokePathNV glStencilStrokePathNV;
+	da_glStencilFillPathInstancedNV glStencilFillPathInstancedNV;
+	da_glStencilStrokePathInstancedNV glStencilStrokePathInstancedNV;
+	da_glPathCoverDepthFuncNV glPathCoverDepthFuncNV;
+	da_glPathColorGenNV glPathColorGenNV;
+	da_glPathTexGenNV glPathTexGenNV;
+	da_glPathFogGenNV glPathFogGenNV;
+	da_glCoverFillPathNV glCoverFillPathNV;
+	da_glCoverStrokePathNV glCoverStrokePathNV;
+	da_glCoverFillPathInstancedNV glCoverFillPathInstancedNV;
+	da_glCoverStrokePathInstancedNV glCoverStrokePathInstancedNV;
+	da_glStencilThenCoverFillPathNV glStencilThenCoverFillPathNV;
+	da_glStencilThenCoverStrokePathNV glStencilThenCoverStrokePathNV;
+	da_glStencilThenCoverFillPathInstancedNV glStencilThenCoverFillPathInstancedNV;
+	da_glStencilThenCoverStrokePathInstancedNV glStencilThenCoverStrokePathInstancedNV;
+	da_glProgramPathFragmentInputGenNV glProgramPathFragmentInputGenNV;
+	da_glGetPathParameterivNV glGetPathParameterivNV;
+	da_glGetPathParameterfvNV glGetPathParameterfvNV;
+	da_glGetPathCommandsNV glGetPathCommandsNV;
+	da_glGetPathCoordsNV glGetPathCoordsNV;
+	da_glGetPathDashArrayNV glGetPathDashArrayNV;
+	da_glGetPathMetricsNV glGetPathMetricsNV;
+	da_glGetPathMetricRangeNV glGetPathMetricRangeNV;
+	da_glGetPathSpacingNV glGetPathSpacingNV;
+	da_glGetPathColorGenivNV glGetPathColorGenivNV;
+	da_glGetPathColorGenfvNV glGetPathColorGenfvNV;
+	da_glGetPathTexGenivNV glGetPathTexGenivNV;
+	da_glGetPathTexGenfvNV glGetPathTexGenfvNV;
+	da_glIsPointInFillPathNV glIsPointInFillPathNV;
+	da_glIsPointInStrokePathNV glIsPointInStrokePathNV;
+	da_glGetPathLengthNV glGetPathLengthNV;
+	da_glPointAlongPathNV glPointAlongPathNV;
+	da_glMatrixLoad3x2fNV glMatrixLoad3x2fNV;
+	da_glMatrixLoad3x3fNV glMatrixLoad3x3fNV;
+	da_glMatrixLoadTranspose3x3fNV glMatrixLoadTranspose3x3fNV;
+	da_glMatrixMult3x2fNV glMatrixMult3x2fNV;
+	da_glMatrixMult3x3fNV glMatrixMult3x3fNV;
+	da_glMatrixMultTranspose3x3fNV glMatrixMultTranspose3x3fNV;
+	da_glGetProgramResourcefvNV glGetProgramResourcefvNV;
+}
+
+private __gshared bool _NV_path_rendering;
+@nogc bool NV_path_rendering() nothrow @property { return _NV_path_rendering; }
+private void load_NV_path_rendering() {
+    try {
+        bindGLFunc( cast( void** )&glProgramLocalParameterI4iNV, "glProgramLocalParameterI4iNV" );
+		bindGLFunc( cast( void** )&glPathCommandsNV, "glPathCommandsNV" );
+		bindGLFunc( cast( void** )&glPathCoordsNV, "glPathCoordsNV" );
+		bindGLFunc( cast( void** )&glPathSubCommandsNV, "glPathSubCommandsNV" );
+		bindGLFunc( cast( void** )&glPathSubCoordsNV, "glPathSubCoordsNV" );
+		bindGLFunc( cast( void** )&glPathStringNV, "glPathStringNV" );
+		bindGLFunc( cast( void** )&glPathGlyphsNV, "glPathGlyphsNV" );
+		bindGLFunc( cast( void** )&glPathGlyphRangeNV, "glPathGlyphRangeNV" );
+		bindGLFunc( cast( void** )&glPathGlyphIndexArrayNV, "glPathGlyphIndexArrayNV" );
+		bindGLFunc( cast( void** )&glPathMemoryGlyphIndexArrayNV, "glPathMemoryGlyphIndexArrayNV" );
+		bindGLFunc( cast( void** )&glPathGlyphIndexRangeNV, "glPathGlyphIndexRangeNV" );
+		bindGLFunc( cast( void** )&glWeightPathsNV, "glWeightPathsNV" );
+		bindGLFunc( cast( void** )&glCopyPathNV, "glCopyPathNV" );
+		bindGLFunc( cast( void** )&glInterpolatePathsNV, "glInterpolatePathsNV");
+		bindGLFunc( cast( void** )&glTransformPathNV, "glTransformPathNV");
+		bindGLFunc( cast( void** )&glPathParameterivNV, "glPathParameterivNV");
+		bindGLFunc( cast( void** )&glPathParameteriNV, "glPathParameteriNV");
+		bindGLFunc( cast( void** )&glPathParameterfvNV, "glPathParameterfvNV");
+		bindGLFunc( cast( void** )&glPathParameterfNV, "glPathParameterfNV");
+		bindGLFunc( cast( void** )&glPathDashArrayNV, "glPathDashArrayNV");
+		bindGLFunc( cast( void** )&glGenPathsNV, "glGenPathsNV");
+		bindGLFunc( cast( void** )&glDeletePathsNV, "glDeletePathsNV");
+		bindGLFunc( cast( void** )&glIsPathNV, "glIsPathNV");
+		bindGLFunc( cast( void** )&glPathStencilFuncNV, "glPathStencilFuncNV" );
+		bindGLFunc( cast( void** )&glPathStencilDepthOffsetNV, "glPathStencilDepthOffsetNV" );
+		bindGLFunc( cast( void** )&glStencilFillPathNV, "glStencilFillPathNV" );
+		bindGLFunc( cast( void** )&glStencilStrokePathNV, "glStencilStrokePathNV" );
+		bindGLFunc( cast( void** )&glStencilFillPathInstancedNV, "glStencilFillPathInstancedNV" );
+		bindGLFunc( cast( void** )&glStencilStrokePathInstancedNV, "glStencilStrokePathInstancedNV" );
+		bindGLFunc( cast( void** )&glPathCoverDepthFuncNV, "glPathCoverDepthFuncNV" );
+		bindGLFunc( cast( void** )&glPathColorGenNV, "glPathColorGenNV" );
+		bindGLFunc( cast( void** )&glPathTexGenNV, "glPathTexGenNV" );
+		bindGLFunc( cast( void** )&glPathFogGenNV, "glPathFogGenNV" );
+		bindGLFunc( cast( void** )&glCoverFillPathNV, "glCoverFillPathNV" );
+		bindGLFunc( cast( void** )&glCoverStrokePathNV, "glCoverStrokePathNV" );
+		bindGLFunc( cast( void** )&glCoverFillPathInstancedNV, "glCoverFillPathInstancedNV" );
+		bindGLFunc( cast( void** )&glCoverStrokePathInstancedNV, "glCoverStrokePathInstancedNV" );
+		bindGLFunc( cast( void** )&glStencilThenCoverFillPathNV, "glStencilThenCoverFillPathNV" );
+		bindGLFunc( cast( void** )&glStencilThenCoverStrokePathNV, "glStencilThenCoverStrokePathNV" );
+		bindGLFunc( cast( void** )&glStencilThenCoverFillPathInstancedNV, "glStencilThenCoverFillPathInstancedNV" );
+		bindGLFunc( cast( void** )&glStencilThenCoverStrokePathInstancedNV, "glStencilThenCoverStrokePathInstancedNV" );
+		bindGLFunc( cast( void** )&glProgramPathFragmentInputGenNV, "glProgramPathFragmentInputGenNV" );
+		bindGLFunc( cast( void** )&glGetPathParameterivNV, "glGetPathParameterivNV" );
+		bindGLFunc( cast( void** )&glGetPathParameterfvNV, "glGetPathParameterfvNV" );
+		bindGLFunc( cast( void** )&glGetPathCommandsNV, "glGetPathCommandsNV" );
+		bindGLFunc( cast( void** )&glGetPathCoordsNV, "glGetPathCoordsNV" );
+		bindGLFunc( cast( void** )&glGetPathDashArrayNV, "glGetPathDashArrayNV" );
+		bindGLFunc( cast( void** )&glGetPathMetricsNV, "glGetPathMetricsNV" );
+		bindGLFunc( cast( void** )&glGetPathMetricRangeNV, "glGetPathMetricRangeNV" );
+		bindGLFunc( cast( void** )&glGetPathSpacingNV, "glGetPathSpacingNV" );
+		bindGLFunc( cast( void** )&glGetPathColorGenivNV, "glGetPathColorGenivNV" );
+		bindGLFunc( cast( void** )&glGetPathColorGenfvNV, "glGetPathColorGenfvNV" );
+		bindGLFunc( cast( void** )&glGetPathTexGenivNV, "glGetPathTexGenivNV" );
+		bindGLFunc( cast( void** )&glGetPathTexGenfvNV, "glGetPathTexGenfvNV" );
+		bindGLFunc( cast( void** )&glIsPointInFillPathNV, "glIsPointInFillPathNV" );
+		bindGLFunc( cast( void** )&glIsPointInStrokePathNV, "glIsPointInStrokePathNV" );
+		bindGLFunc( cast( void** )&glGetPathLengthNV, "glGetPathLengthNV" );
+		bindGLFunc( cast( void** )&glPointAlongPathNV, "glPointAlongPathNV" );
+		bindGLFunc( cast( void** )&glMatrixLoad3x2fNV, "glMatrixLoad3x2fNV" );
+		bindGLFunc( cast( void** )&glMatrixLoad3x3fNV, "glMatrixLoad3x3fNV" );
+		bindGLFunc( cast( void** )&glMatrixLoadTranspose3x3fNV, "glMatrixLoadTranspose3x3fNV" );
+		bindGLFunc( cast( void** )&glMatrixMult3x2fNV, "glMatrixMult3x2fNV" );
+		bindGLFunc( cast( void** )&glMatrixMult3x3fNV, "glMatrixMult3x3fNV" );
+		bindGLFunc( cast( void** )&glMatrixMultTranspose3x3fNV, "glMatrixMultTranspose3x3fNV" );
+		bindGLFunc( cast( void** )&glGetProgramResourcefvNV, "glGetProgramResourcefvNV" );
+        _NV_path_rendering = true;
+    }  catch ( Exception e ) {
+        _NV_path_rendering = false;
     }
 }
 
@@ -1510,6 +2049,7 @@ package void loadEXT( GLVersion glversion ) {
     _EXT_texture_compression_rgtc = isExtSupported( glversion, "GL_EXT_texture_compression_rgtc" );
 
     if( isExtSupported( glversion, "GL_NV_texture_barrier" )) load_NV_texture_barrier();
+    if( isExtSupported( glversion, "GL_NV_path_rendering" )) load_NV_path_rendering();
     if( isExtSupported( glversion, "GL_APPLE_vertex_array_object" )) load_APPLE_vertex_array_object();
 
     // TODO Why does this need to be loaded last?? Who implemented it?
